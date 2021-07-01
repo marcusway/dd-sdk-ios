@@ -463,6 +463,7 @@
 		9E68FB56244707FD0013A8AA /* ObjcExceptionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E68FB54244707FD0013A8AA /* ObjcExceptionHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9E986C302677B91400D62490 /* VitalRefreshRateReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E986C2F2677B91400D62490 /* VitalRefreshRateReaderTests.swift */; };
 		9E989A4225F640D100235FC3 /* AppStateListenerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E989A4125F640D100235FC3 /* AppStateListenerTests.swift */; };
+		9E9973F1268DF69500D8059B /* VitalInfoSampler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9973F0268DF69500D8059B /* VitalInfoSampler.swift */; };
 		9EA3CA6926775A3500B16871 /* VitalRefreshRateReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA3CA6826775A3500B16871 /* VitalRefreshRateReader.swift */; };
 		9EC8B5DA2668197B000F7529 /* VitalCPUReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B5D92668197B000F7529 /* VitalCPUReader.swift */; };
 		9EC8B5EE2668E4DB000F7529 /* VitalCPUReaderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B5ED2668E4DB000F7529 /* VitalCPUReaderTest.swift */; };
@@ -472,11 +473,8 @@
 		9EF963E82537556300235F98 /* DDURLSessionDelegateAsSuperclassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF963E72537556300235F98 /* DDURLSessionDelegateAsSuperclassTests.swift */; };
 		9EFD112C24B32D29003A1A2B /* FirstPartyURLsFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFD112B24B32D29003A1A2B /* FirstPartyURLsFilter.swift */; };
 		B3BBBCB2265E71C700943419 /* VitalMemoryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BBBCB0265E71C600943419 /* VitalMemoryReader.swift */; };
-		B3BBBCB3265E71C700943419 /* VitalReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BBBCB1265E71C600943419 /* VitalReader.swift */; };
 		B3BBBCBC265E71D100943419 /* VitalMemoryReaderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BBBCBB265E71D100943419 /* VitalMemoryReaderTest.swift */; };
 		B3FC3C0926526F0000DEED9E /* VitalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FC3C0626526EFF00DEED9E /* VitalInfo.swift */; };
-		B3FC3C0A26526F0000DEED9E /* VitalObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FC3C0726526F0000DEED9E /* VitalObserver.swift */; };
-		B3FC3C332652AE1400DEED9E /* VitalListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FC3C322652AE1400DEED9E /* VitalListener.swift */; };
 		B3FC3C3C2653A97700DEED9E /* VitalObserverTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FC3C3B2653A97700DEED9E /* VitalObserverTest.swift */; };
 		E132727B24B333C700952F8B /* TracingBenchmarkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E132727A24B333C700952F8B /* TracingBenchmarkTests.swift */; };
 		E132727D24B35B5F00952F8B /* TracingStorageBenchmarkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E132727C24B35B5F00952F8B /* TracingStorageBenchmarkTests.swift */; };
@@ -1078,6 +1076,7 @@
 		9E68FB54244707FD0013A8AA /* ObjcExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjcExceptionHandler.h; sourceTree = "<group>"; };
 		9E986C2F2677B91400D62490 /* VitalRefreshRateReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitalRefreshRateReaderTests.swift; sourceTree = "<group>"; };
 		9E989A4125F640D100235FC3 /* AppStateListenerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateListenerTests.swift; sourceTree = "<group>"; };
+		9E9973F0268DF69500D8059B /* VitalInfoSampler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitalInfoSampler.swift; sourceTree = "<group>"; };
 		9E9EB37624468CE90002C80B /* Datadog.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = Datadog.modulemap; sourceTree = "<group>"; };
 		9EA3CA6826775A3500B16871 /* VitalRefreshRateReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitalRefreshRateReader.swift; sourceTree = "<group>"; };
 		9EC8B5D92668197B000F7529 /* VitalCPUReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitalCPUReader.swift; sourceTree = "<group>"; };
@@ -1090,11 +1089,8 @@
 		9EF963E72537556300235F98 /* DDURLSessionDelegateAsSuperclassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDURLSessionDelegateAsSuperclassTests.swift; sourceTree = "<group>"; };
 		9EFD112B24B32D29003A1A2B /* FirstPartyURLsFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPartyURLsFilter.swift; sourceTree = "<group>"; };
 		B3BBBCB0265E71C600943419 /* VitalMemoryReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VitalMemoryReader.swift; sourceTree = "<group>"; };
-		B3BBBCB1265E71C600943419 /* VitalReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VitalReader.swift; sourceTree = "<group>"; };
 		B3BBBCBB265E71D100943419 /* VitalMemoryReaderTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VitalMemoryReaderTest.swift; sourceTree = "<group>"; };
 		B3FC3C0626526EFF00DEED9E /* VitalInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VitalInfo.swift; sourceTree = "<group>"; };
-		B3FC3C0726526F0000DEED9E /* VitalObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VitalObserver.swift; sourceTree = "<group>"; };
-		B3FC3C322652AE1400DEED9E /* VitalListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitalListener.swift; sourceTree = "<group>"; };
 		B3FC3C3B2653A97700DEED9E /* VitalObserverTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitalObserverTest.swift; sourceTree = "<group>"; };
 		E132727A24B333C700952F8B /* TracingBenchmarkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracingBenchmarkTests.swift; sourceTree = "<group>"; };
 		E132727C24B35B5F00952F8B /* TracingStorageBenchmarkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracingStorageBenchmarkTests.swift; sourceTree = "<group>"; };
@@ -3077,10 +3073,8 @@
 				9EA3CA6826775A3500B16871 /* VitalRefreshRateReader.swift */,
 				9EC8B5D92668197B000F7529 /* VitalCPUReader.swift */,
 				B3BBBCB0265E71C600943419 /* VitalMemoryReader.swift */,
-				B3BBBCB1265E71C600943419 /* VitalReader.swift */,
 				B3FC3C0626526EFF00DEED9E /* VitalInfo.swift */,
-				B3FC3C0726526F0000DEED9E /* VitalObserver.swift */,
-				B3FC3C322652AE1400DEED9E /* VitalListener.swift */,
+				9E9973F0268DF69500D8059B /* VitalInfoSampler.swift */,
 			);
 			path = RUMVitals;
 			sourceTree = "<group>";
@@ -3712,7 +3706,6 @@
 				61B0386C2527247B00518F3C /* TaskInterception.swift in Sources */,
 				61B03892252724D900518F3C /* HTTPHeadersReader.swift in Sources */,
 				61122ECE25B1B74500F9C7F5 /* SpanSanitizer.swift in Sources */,
-				B3BBBCB3265E71C700943419 /* VitalReader.swift in Sources */,
 				613E79282577B0EE00DFCC17 /* Writer.swift in Sources */,
 				61B0384E2527246900518F3C /* URLSessionAutoInstrumentation.swift in Sources */,
 				61C5A88924509A0C00DA608C /* DDSpanContext.swift in Sources */,
@@ -3740,7 +3733,6 @@
 				61C5A88E24509A1F00DA608C /* Tracer.swift in Sources */,
 				61E909EE24A24DD3005EA2DE /* OTFormat.swift in Sources */,
 				9E26E6B924C87693000B3270 /* RUMDataModels.swift in Sources */,
-				B3FC3C0A26526F0000DEED9E /* VitalObserver.swift in Sources */,
 				613E793B2577B6EE00DFCC17 /* DataReader.swift in Sources */,
 				614B0A5324EBFE5500A2A780 /* DDRUMMonitor.swift in Sources */,
 				61133BE32423979B00786299 /* UserInfoProvider.swift in Sources */,
@@ -3770,7 +3762,6 @@
 				61133BD72423979B00786299 /* DataUploadWorker.swift in Sources */,
 				61133BD12423979B00786299 /* FilesOrchestrator.swift in Sources */,
 				61133BCD2423979B00786299 /* NetworkConnectionInfoProvider.swift in Sources */,
-				B3FC3C332652AE1400DEED9E /* VitalListener.swift in Sources */,
 				61FF282424B8A1C3000B3D9B /* RUMEventFileOutput.swift in Sources */,
 				61B22E5A24F3E6B700DC26D2 /* RUMDebugging.swift in Sources */,
 				61C5A88B24509A0C00DA608C /* SpanOutput.swift in Sources */,
@@ -3789,6 +3780,7 @@
 				614E9EB3244719FA007EE3E1 /* BundleType.swift in Sources */,
 				61F3CDA72512144600C816E5 /* UIKitRUMViewsPredicate.swift in Sources */,
 				61133BCE2423979B00786299 /* BatteryStatusProvider.swift in Sources */,
+				9E9973F1268DF69500D8059B /* VitalInfoSampler.swift in Sources */,
 				9EA3CA6926775A3500B16871 /* VitalRefreshRateReader.swift in Sources */,
 				E13A880C257922EC004FB174 /* EnvironmentSpanIntegration.swift in Sources */,
 				61B038602527247200518F3C /* URLSessionTracingHandler.swift in Sources */,

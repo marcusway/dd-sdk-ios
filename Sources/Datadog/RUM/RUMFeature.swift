@@ -37,6 +37,10 @@ internal final class RUMFeature {
     let carrierInfoProvider: CarrierInfoProviderType
     let launchTimeProvider: LaunchTimeProviderType
 
+    let vitalCPUReader: VitalCPUReader?
+    let vitalMemoryReader: VitalMemoryReader?
+    let vitalRefreshRateReader: VitalRefreshRateReader?
+
     // MARK: - Components
 
     static let featureName = "rum"
@@ -160,6 +164,10 @@ internal final class RUMFeature {
         self.eventsMapper = eventsMapper
         self.storage = storage
         self.upload = upload
+
+        self.vitalCPUReader = VitalCPUReader()
+        self.vitalMemoryReader = VitalMemoryReader()
+        self.vitalRefreshRateReader = VitalRefreshRateReader()
     }
 
 #if DD_SDK_COMPILED_FOR_TESTING
